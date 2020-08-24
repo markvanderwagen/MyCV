@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+.containers {
+  height: 35%;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-right: 10%;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 0.3px 10px #8a8a8a;
+          box-shadow: 1px 0.3px 10px #8a8a8a;
+}
+
+.containers p {
+  line-height: 35px;
+  font-size: 20px;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.portfolioBtn {
+  display: block;
+  margin-top: 10px;
+  margin-right: 2%;
+  margin-left: 1px;
+  border: none;
+  background: #ff5e00;
+  color: #FFFFFF;
+  padding: 12px 25px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Indie Flower;
+  font-size: 16px;
+  float: right;
+  width: 47%;
+  bottom: 10px;
+}
+
+.portfolioBtn a {
+  text-decoration: none;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  color: #fff;
+}
+
+.portfolioBtn:focus {
+  outline: none;
+}
+
+.portfolioBtn:hover {
+  background-color: #b44200;
+}
+
+.portfolioImage {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 20px;
+  width: 65%;
+}
+
+.portfolioImage:last-child {
+  padding-top: 80px;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 100px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1900px) {
+  .containers {
+    height: 35%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .portfolioImage {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    width: 93%;
+  }
+  .containers {
+    height: 50%;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */

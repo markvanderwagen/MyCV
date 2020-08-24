@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body {
+  font-family: Permanent Marker;
+  background: #dadada;
+}
+
+nav {
+  height: 10vh;
+  background: #333333;
+  box-shadow: 5px 0.3px 10px 5px rgb(255, 94, 0);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: auto;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  transition: 0.6s;
+
+}
+
+.nav-links li a:hover{
+  color: rgb(255, 94, 0);
+}
+
+.landing {
+  height: 100%;
+  display: block;
+  margin-left: 15%;
+  margin-right: 15%;
+  box-shadow: 1px 0.3px 100px #333333;
+  padding-top: 1%;
+  margin-bottom: 100px;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  width: 50%;
+}
+
+.landing h1 {
+  font-size: 50px;
+  display: block;
+  margin-top: 10px;
+  background-color: rgba(255, 94, 0, 0.9);
+  box-shadow: 0.1px 0.3px 10px #333333;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow:
+   -3px -2px 0 #333333,  
+    3px -2px 0 #333333,
+    -3px 2px 0 #333333,
+     3px 2px 0 #333333;
+}
+
+.landing h3 {
+  font-size: 20px;
+  display: block;
+  margin-top: 10px;
+  background-color: #00d9ff;
+  box-shadow: 0.1px 0.3px 10px #333333;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow:
+   -2px -1px 0 #333333,  
+    2px -1px 0 #333333,
+    -2px 1px 0 #333333,
+     2px 1px 0 #333333;
+}
+
+.landing h2 {
+  font-size: 20px;
+  display: block;
+  margin-top: 10px;
+  background-color: #555555;
+  box-shadow: 0.1px 0.3px 10px #333333;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow:
+   -2px -1px 0 #333333,  
+    2px -1px 0 #333333,
+    -2px 1px 0 #333333,
+     2px 1px 0 #333333;
+}
+
+.landing p {
+  font-size: 21px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 20px;
+  line-height: 20px;
+  font-family: Indie Flower;
+  color: #333333;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  line-height: 35px;
+}
+
+
+  
+@media screen and (max-width: 1264px) {
+  .landing h1 {
+    font-size: 30px;
+    text-shadow:
+   -2px -2px 0 #333333,  
+    2px -2px 0 #333333,
+    -2px 2px 0 #333333,
+    2px 2px 0 #333333;
+    line-height: 35px;
+    margin-top: 15px;
+  }
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    width: 60%;
+  }       
+  .landing {
+    font-size: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 10000;
+    box-shadow: none;
+  }
+  nav {
+    position: relative;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+  .nav-links {
+    position: fixed;
+    background: #333333;
+    height: 50vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(10px at 90% -10%);
+    -webkit-clip-path: circle(10px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1200px at 90% -10%);
+    -webkit-clip-path: circle(1200px at 90% -10%);
+    pointer-events: all;
+  }
+  .landing {
+    flex-direction: column;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li a {
+    font-size: 25px;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.1s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.3s;
+  }
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.4s;
+  }
+  li.fade {
+    opacity: 1;
+  }
+  .menu-btn__burger {
+    width: 35px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-10px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(10px);
+  }
+  // animations
+  .hamburger.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+  }
+  .hamburger.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .hamburger.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+}
+
+footer {
+  display: block;
+  height: 150px;
+  background-color: #333333;
+  box-shadow: 5px 0.3px 10px 5px rgb(255, 94, 0);
+}
+
+footer p {
+  padding-top: 10px;
+  text-align: center;
+  color: rgb(104, 104, 104);
+}
+
+.social-media-links {
+  text-align: center;
+  font-size: 50px;
+  transition: 0.6s;
+}
+
+.social-media-links i {
+  transition: 1.4s;
+  padding-right: 15px;
+}
+.social-media-links i:hover {
+  color: rgb(255, 94, 0);
+}
+
+.social-media-links a {
+  text-decoration: none;
+  color: #494949;
+}

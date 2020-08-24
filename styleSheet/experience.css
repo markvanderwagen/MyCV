@@ -1,0 +1,15 @@
+.landing {
+  height: 750px;
+}
+
+.containers {
+  height: 35%;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-right: 10%;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 0.3px 10px #8a8a8a;
+          box-shadow: 1px 0.3px 10px #8a8a8a;
+}
+/*# sourceMappingURL=experience.css.map */
