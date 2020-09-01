@@ -196,6 +196,7 @@ footer p {
     position: relative;
   }
   .hamburger {
+    -webkit-tap-highlight-color: transparent;
     position: absolute;
     cursor: pointer;
     right: 5%;
@@ -215,8 +216,8 @@ footer p {
             flex-direction: column;
     clip-path: circle(10px at 90% -10%);
     -webkit-clip-path: circle(10px at 90% -10%);
-    -webkit-transition: all 0.8s ease-out;
-    transition: all 0.8s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
     pointer-events: none;
   }
   .nav-links.open {
@@ -261,8 +262,8 @@ footer p {
     height: 6px;
     background: #fff;
     border-radius: 5px;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   .menu-btn__burger::before,
   .menu-btn__burger::after {
@@ -272,8 +273,8 @@ footer p {
     height: 6px;
     background: #fff;
     border-radius: 5px;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   .menu-btn__burger::before {
     -webkit-transform: translateY(-10px);
