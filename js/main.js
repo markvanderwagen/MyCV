@@ -20,4 +20,11 @@ hamburger.addEventListener("click", () => {
   });
 });
 
+window.onscroll = function (e) {  
+  if(navLinks.classList.contains('open'))
+      {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+      }
+  } 
 
