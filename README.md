@@ -1,3 +1,3 @@
-# MyCV - https://markvanderwagen.github.io/MyCV/index.html
-My CV
+# MyCV
+My CV - https://markvanderwagen.github.io/MyCV/index.html
 
