@@ -119,9 +119,12 @@ nav {
   font-size: 65px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  margin-top: 15px;
+  margin-top: 25px;
   display: block;
   background-color: #b1b1b1;
+  height: 90px;
+  margin-bottom: 30px;
+  height: 50%;
 }
 
 .languages i {
@@ -305,9 +308,19 @@ footer p {
   }
   .languages {
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     -webkit-transition: 0.6s;
     transition: 0.6s;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .languages {
+    height: 50%;
+    text-align: center;
+    font-size: 40px;
+    vertical-align: middle;
   }
 }
 /*# sourceMappingURL=style.css.map */
