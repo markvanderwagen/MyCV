@@ -1,9 +1,23 @@
 .landing {
-  height: 1000px;
+  height: 1800px;
+}
+
+.small-text {
+  font-size: medium;
+  display: block;
+  margin-top: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.text-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .containers {
-  height: 35%;
+  height: 25%;
   width: 80%;
   margin-left: 10%;
   margin-top: 5%;
@@ -22,7 +36,7 @@
   max-width: 500px;
 }
 
-.landing p {
+.landing .date {
   display: block;
   margin-top: 30px;
   font-size: 40px;
@@ -40,7 +54,7 @@
 }
 
 @media screen and (max-width: 612px) {
-  .landing p {
+  .landing .date {
     display: block;
     margin-top: 30px;
     font-size: 30px;
